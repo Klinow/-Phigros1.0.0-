@@ -1,0 +1,249 @@
+body{
+	background-color: black;
+}
+
+.loading-main {
+	background-color: #000;
+	box-sizing: content-box;
+	position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.loading-main div{
+	position: absolute;
+}
+
+.loading-name {
+	width: 166px;
+	height: 42px;
+	top: 26px;
+	left: -39px;
+    border: 2px solid transparent;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.loading-name .lo-box {
+	width: 300px;
+	height: 42px;
+	top: 0px;
+	left: -175px;
+	background-color: #FFF;
+	z-index: 1;
+	margin-right: 2px;
+	animation: loader 1.1s infinite;
+	animation-timing-function: linear;
+}
+
+.xt-kuang .above-k {
+    width: 173px;
+	height: 1px;
+	top: 23px;
+	left: -42px;
+	border: 1px solid transparent;
+	overflow: hidden;
+}
+
+.xt-kuang .above-k .a {
+	width: 200px;
+	height: 1px;
+	top: 0px;
+	left: 0px;
+	border-top: solid #FFF 1px;
+	animation-name: xt-ud;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: reverse;
+}
+
+.xt-kuang .under-k {
+	width: 173px;
+	height: 1px;
+	top: 72px;
+	left: -42px;
+	border: 1px solid transparent;
+	overflow: hidden;
+}
+
+.xt-kuang .under-k .u {
+	width: 200px;
+	height: 1px;
+	top: 0px;
+	left: 0px;
+	border-top: solid #FFF 1px;
+	animation-name: xt-ud;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.xt-kuang .left-k {
+	width: 1px;
+	height: 48px;
+	top: 24px;
+	left: -42px;
+	border: 1px solid transparent;
+	overflow: hidden;
+}
+
+.xt-kuang .left-k .l {
+	width: 1px;
+	height: 100px;
+	top: 0px;
+	left: 0px;
+	border-left: solid #FFF 1px;
+	animation-name: xt-ad;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.xt-kuang .right-k {
+	width: 1px;
+	height: 50px;
+	top: 23px;
+	left: 131px;
+	border: 1px solid transparent;
+	overflow: hidden;
+}
+
+.xt-kuang .right-k .r {
+	width: 1px;
+	height: 100px;
+	top: 0px;
+	left: 0px;
+	border-left: solid #FFF 1px;
+	animation-name: xt-ad;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: reverse;
+}
+
+.loading-name .lo-d{
+	position: absolute;
+	top: -22px;
+	left: 23px;
+	color: #000;
+	-webkit-text-stroke: 0.5px #FFF;
+	z-index: 8;
+	
+}
+
+.loading-dz {
+	width: 100px;
+	height: 100px;
+	border: 1px solid;
+	border-color: #FFF;
+	z-index: 10;
+	animation-name: lo-xz;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-name: lo-xz;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.loading-xz {
+	width: 92px;
+	height: 92px;
+	margin: 4px;
+	border: 1px solid;
+	border-color: #fff;
+	opacity: 0.5;
+	z-index: 10;
+	animation-name: lo-xz;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: reverse;
+	-webkit-animation-name: lo-xz;
+	-webkit-animation-duration: 4s;
+	-webkit-background-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: reverse;
+}
+
+.loading-yuan {
+	width: 82px;
+	height: 82px;
+	margin: 5px;
+	border: 4px solid #fff;
+	border-top-color:#FFF;
+	border-right-color:transparent;
+	border-bottom-color:#FFF;
+    border-left-color:transparent;
+	border-radius: 90px;
+	z-index: 10;
+	animation-name: lo-xz;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: reverse;
+	-webkit-animation-name: lo-xz;
+	-webkit-animation-duration: 2.5s;
+	-webkit-background-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: reverse;
+}
+
+
+
+@keyframes lo-xz {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes lo-xz {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+@keyframes loader {
+    0% {
+        transform: translate(-170px);
+    }
+    100% {
+        transform: translate(350px);
+    }
+}
+
+@-webkit-keyframes loader {
+    0% {
+        transform: translate(-170px);
+    }
+    100% {
+        transform: translate(350px);
+    }
+}
+
+@keyframes xt-ud {
+	0% {
+		left: -210px;
+	}
+	40%,50%,60% {
+		left: 0px;
+	}
+	100% {
+		left: 210px;
+	}
+}
+
+@keyframes xt-ad {
+	0% {
+		top: 400px;
+	}
+	40%,50%,60% {
+		top: 0px;
+	}
+	100% {
+		top: -400px;
+	}
+}
